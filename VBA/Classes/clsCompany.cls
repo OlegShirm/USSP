@@ -10,6 +10,8 @@ Private mTicker As String
 Private mCompanyName As String
 Private mSector As String
 Private mIndustry As String
+Private mFounded As Date
+Private mIPODate As Date
 
 
 Public Property Get Ticker() As String
@@ -45,4 +47,22 @@ End Property
 
 Public Property Let Industry(ByVal Value As String)
     mIndustry = Value
+End Property
+
+
+Public Property Get Founded() As Date
+    Founded = mFounded
+End Property
+
+Public Property Let Founded(ByVal Value As Date)
+    mFounded = Value
+End Property
+
+
+Public Property Get IPODate() As Date
+    IPODate = mIPODate
+End Property
+
+Public Property Let IPODate(ByVal Value As Date)
+    mIPODate = Value
 End Property
