@@ -29,6 +29,13 @@ Private mDebtToEquity As Double
 Private mWeek52High As Double
 Private mWeek52Low As Double
 
+Private mDividendYield As Double
+
+Private mPE As Double
+Private mEPS As Double
+Private mROE As Double
+Private mDebtToEquity As Double
+
 Public Property Get Ticker() As String
     Ticker = mTicker
 End Property
@@ -137,4 +144,44 @@ End Property
 
 Public Property Let Week52Low(ByVal Value As Double)
     mWeek52Low = Value
+End Property
+
+Public Property Get DividendYield() As Double
+    DividendYield = mDividendYield
+End Property
+
+Public Property Let DividendYield(ByVal Value As Double)
+    mDividendYield = Value
+End Property
+
+Public Property Get PE() As Double
+    PE = mPE
+End Property
+
+Public Property Let PE(ByVal Value As Double)
+    mPE = Value
+End Property
+
+Public Property Get EPS() As Double
+    EPS = mEPS
+End Property
+
+Public Property Let EPS(ByVal Value As Double)
+    mEPS = Value
+End Property
+
+Public Property Get ROE() As Double
+    ROE = mROE
+End Property
+
+Public Property Let ROE(ByVal Value As Double)
+    mROE = Value
+End Property
+
+Public Property Get DebtToEquity() As Double
+    DebtToEquity = mDebtToEquity
+End Property
+
+Public Property Let DebtToEquity(ByVal Value As Double)
+    mDebtToEquity = Value
 End Property
