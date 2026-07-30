@@ -26,6 +26,9 @@ Private mEPS As Double
 Private mROE As Double
 Private mDebtToEquity As Double
 
+Private mWeek52High As Double
+Private mWeek52Low As Double
+
 Public Property Get Ticker() As String
     Ticker = mTicker
 End Property
@@ -117,4 +120,21 @@ End Property
 
 Public Property Let CurrentPrice(ByVal Value As Double)
     mCurrentPrice = Value
+End Property
+
+Public Property Get Week52High() As Double
+    Week52High = mWeek52High
+End Property
+
+Public Property Let Week52High(ByVal Value As Double)
+    mWeek52High = Value
+End Property
+
+
+Public Property Get Week52Low() As Double
+    Week52Low = mWeek52Low
+End Property
+
+Public Property Let Week52Low(ByVal Value As Double)
+    mWeek52Low = Value
 End Property
