@@ -44,6 +44,12 @@ Private mPEGRatio As Double
 Private mDividendYield As Double
 Private mDividendRate As Double
 
+Private mRevenue As Double
+Private mNetIncome As Double
+Private mEPS As Double
+Private mEBITDA As Double
+Private mFreeCashFlow As Double
+
 Public Property Get Ticker() As String
     Ticker = mTicker
 End Property
@@ -243,4 +249,48 @@ End Property
 
 Public Property Let DividendRate(ByVal Value As Double)
     mDividendRate = Value
+End Property
+
+Public Property Get Revenue() As Double
+    Revenue = mRevenue
+End Property
+
+Public Property Let Revenue(ByVal Value As Double)
+    mRevenue = Value
+End Property
+
+
+Public Property Get NetIncome() As Double
+    NetIncome = mNetIncome
+End Property
+
+Public Property Let NetIncome(ByVal Value As Double)
+    mNetIncome = Value
+End Property
+
+
+Public Property Get EPS() As Double
+    EPS = mEPS
+End Property
+
+Public Property Let EPS(ByVal Value As Double)
+    mEPS = Value
+End Property
+
+
+Public Property Get EBITDA() As Double
+    EBITDA = mEBITDA
+End Property
+
+Public Property Let EBITDA(ByVal Value As Double)
+    mEBITDA = Value
+End Property
+
+
+Public Property Get FreeCashFlow() As Double
+    FreeCashFlow = mFreeCashFlow
+End Property
+
+Public Property Let FreeCashFlow(ByVal Value As Double)
+    mFreeCashFlow = Value
 End Property
