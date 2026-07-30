@@ -36,6 +36,11 @@ Private mEPS As Double
 Private mROE As Double
 Private mDebtToEquity As Double
 
+Private mPERatio As Double
+Private mPBRatio As Double
+Private mPSRatio As Double
+Private mPEGRatio As Double
+
 Public Property Get Ticker() As String
     Ticker = mTicker
 End Property
@@ -184,4 +189,39 @@ End Property
 
 Public Property Let DebtToEquity(ByVal Value As Double)
     mDebtToEquity = Value
+End Property
+
+Public Property Get PERatio() As Double
+    PERatio = mPERatio
+End Property
+
+Public Property Let PERatio(ByVal Value As Double)
+    mPERatio = Value
+End Property
+
+
+Public Property Get PBRatio() As Double
+    PBRatio = mPBRatio
+End Property
+
+Public Property Let PBRatio(ByVal Value As Double)
+    mPBRatio = Value
+End Property
+
+
+Public Property Get PSRatio() As Double
+    PSRatio = mPSRatio
+End Property
+
+Public Property Let PSRatio(ByVal Value As Double)
+    mPSRatio = Value
+End Property
+
+
+Public Property Get PEGRatio() As Double
+    PEGRatio = mPEGRatio
+End Property
+
+Public Property Let PEGRatio(ByVal Value As Double)
+    mPEGRatio = Value
 End Property
