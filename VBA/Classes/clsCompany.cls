@@ -13,6 +13,18 @@ Private mIndustry As String
 Private mFounded As Date
 Private mIPODate As Date
 
+Private mMarketCap As Double
+Private mCurrentPrice As Double
+
+Private mWeek52High As Double
+Private mWeek52Low As Double
+
+Private mDividendYield As Double
+
+Private mPE As Double
+Private mEPS As Double
+Private mROE As Double
+Private mDebtToEquity As Double
 
 Public Property Get Ticker() As String
     Ticker = mTicker
@@ -88,4 +100,21 @@ Public Property Get IPOAge() As Integer
 
     IPOAge = DateDiff("yyyy", mIPODate, Date)
 
+End Property
+
+Public Property Get MarketCap() As Double
+    MarketCap = mMarketCap
+End Property
+
+Public Property Let MarketCap(ByVal Value As Double)
+    mMarketCap = Value
+End Property
+
+
+Public Property Get CurrentPrice() As Double
+    CurrentPrice = mCurrentPrice
+End Property
+
+Public Property Let CurrentPrice(ByVal Value As Double)
+    mCurrentPrice = Value
 End Property
