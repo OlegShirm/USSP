@@ -66,3 +66,26 @@ End Property
 Public Property Let IPODate(ByVal Value As Date)
     mIPODate = Value
 End Property
+
+Public Property Get CompanyAge() As Integer
+
+    If mFounded = 0 Then
+        CompanyAge = 0
+        Exit Property
+    End If
+
+    CompanyAge = DateDiff("yyyy", mFounded, Date)
+
+End Property
+
+
+Public Property Get IPOAge() As Integer
+
+    If mIPODate = 0 Then
+        IPOAge = 0
+        Exit Property
+    End If
+
+    IPOAge = DateDiff("yyyy", mIPODate, Date)
+
+End Property
