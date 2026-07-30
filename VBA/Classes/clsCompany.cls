@@ -294,3 +294,11 @@ End Property
 Public Property Let FreeCashFlow(ByVal Value As Double)
     mFreeCashFlow = Value
 End Property
+
+Public Property Get IsDividendPayer() As Boolean
+    IsDividendPayer = (mDividendYield > 0)
+End Property
+
+Public Property Get IsProfitable() As Boolean
+    IsProfitable = (mNetIncome > 0)
+End Property
