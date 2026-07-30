@@ -41,6 +41,9 @@ Private mPBRatio As Double
 Private mPSRatio As Double
 Private mPEGRatio As Double
 
+Private mDividendYield As Double
+Private mDividendRate As Double
+
 Public Property Get Ticker() As String
     Ticker = mTicker
 End Property
@@ -224,4 +227,20 @@ End Property
 
 Public Property Let PEGRatio(ByVal Value As Double)
     mPEGRatio = Value
+End Property
+
+Public Property Get DividendYield() As Double
+    DividendYield = mDividendYield
+End Property
+
+Public Property Let DividendYield(ByVal Value As Double)
+    mDividendYield = Value
+End Property
+
+Public Property Get DividendRate() As Double
+    DividendRate = mDividendRate
+End Property
+
+Public Property Let DividendRate(ByVal Value As Double)
+    mDividendRate = Value
 End Property
